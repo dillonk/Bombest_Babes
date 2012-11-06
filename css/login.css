@@ -1,0 +1,17 @@
+@import "fonts.css"; 
+
+#box {
+	margin: 0 auto 0;
+	width: 960px;
+	height: 500px;
+	margin-top: 50px;
+	background: #fff;
+	box-shadow: 0 1px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4);
+}
+
+h1 {
+	font-family: "Helvetica";
+	font-size: 30px;
+	padding-top: 30px;
+	color: #999;
+}

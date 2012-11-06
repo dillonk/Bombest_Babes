@@ -1,0 +1,78 @@
+<!doctype html>
+
+<html>
+
+<head>
+	
+<title>Bombest Babes</title>
+	
+<link rel="stylesheet" type="text/css" href="css/global.css" />	
+
+<!-- slideshow styles/js/jQuery -->
+<link rel='stylesheet' id='style-css'  href='css/diapo.css' type='text/css' media='all'> 
+<script type='text/javascript' src='scripts/jquery.min.js'></script>
+<!--[if !IE]><!--><script type='text/javascript' src='scripts/jquery.mobile-1.0rc2.customized.min.js'></script><!--<![endif]-->
+<script type='text/javascript' src='scripts/jquery.easing.1.3.js'></script> 
+<script type='text/javascript' src='scripts/jquery.hoverIntent.minified.js'></script> 
+<script type='text/javascript' src='scripts/diapo.js'></script> 	
+<!-- end slideshow styles/js/jQuery -->
+
+<script>
+$(function(){
+	$('.pix_diapo').diapo();
+});
+
+</script>
+
+<style>
+section {
+	display: block;
+	overflow: hidden;
+	position: relative;
+}
+</style>
+
+</head>
+	
+<body>
+
+<!--homepage slideshow-->
+<div class="wrap">
+	<div style="overflow:hidden; width:100%; margin: 0 auto 0"> 
+		<div class="pix_diapo">
+			  
+			  <div data-time="8000">
+                     <img src="images/slides/model.jpeg">
+                     <div class="caption elemHover fromRight fadeIn"><!--model name-->
+					 <p class="name">Model Name</p>
+				 </div><!--end model name-->
+		   </div>
+
+                 <div data-time="8000">
+                     <img src="images/slides/model2.jpeg">
+                     <div class="caption elemHover fromRight fadeIn"><!--model name-->
+					 <p class="name">Model Name</p>
+                     </div>><!--end model name-->
+                 </div>
+				
+                <div data-time="8000">
+                    <img src="images/slides/model3.jpeg">
+                    <div class="caption elemHover fromRight fadeIn"><!--model name-->
+					<p class="name">Model Name</p>
+                    </div>><!--end model name-->
+                </div>
+	
+		</div><!-- #pix_diapo -->
+    </div>
+</div><!-- end wrap-->
+
+<ul id="nav">
+  <li><a href="#">Guys</a></li>
+  <li><a href="#">Gals</a></li>
+  <li><a href="#">Login</a></li>
+</ul>
+
+</body>
+<!-- end comment-->
+	
+</html>
