@@ -4,8 +4,8 @@
 	margin: 0 auto;
 	background: #000;
 	-moz-box-shadow: 0 3px 10px #000;
-	-webkit-box-shadow: 0 3px 6px #000;
-	box-shadow: 0 3px 6px #000;
+	-webkit-box-shadow: 0 3px 10px #000;
+	box-shadow: 0 3px 10px #000;
 	height: 600px;
 	overflow: hidden;
 	position: relative;
@@ -54,7 +54,7 @@
 }
 .caption {
 	background: rgba(255,105,180, 0.4);
-	top: 20px;
+	top: 50px;
 	color: #fff;
 	display: block;
 	width: "";
@@ -67,12 +67,15 @@
 
 .name {font-family: light; color: #fff; font-size:50px; margin: 10px 30px 0px 30px;}
 
-#babe_m {
-	background-image: url("../images/BB_month.png") no-repeat;
+.babe_m {
+	background: url('../images/BB_month.png') no-repeat;
 	display: block;
-	left: 70px;
+	position: absolute;
+	top: 250px;
+	left: 13%;
 	width: 325px;
 	height: 325px;
+	z-index: 100000;
 }
 
 

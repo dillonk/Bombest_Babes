@@ -61,7 +61,7 @@
 										//</ul>
 									//</div>
 		
-		mobilePagination	: true,	//true, false. It enables the pagination numbers on mobile devices
+		mobilePagination	: false,	//true, false. It enables the pagination numbers on mobile devices
 		
 		thumbs				: false,	//true, false. It shows the thumbnails (if available) when the mouse is on the pagination buttons. Not available for mobile devices
 		
