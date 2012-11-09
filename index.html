@@ -1,80 +1,76 @@
 <!doctype html>
-
 <html>
 
-<head>
+	<head>
+    	<title>Bombest Babes</title>
+        <link rel="stylesheet" type="text/css" href="site-wide/functions/css/landing.css" />	
+        <link rel='stylesheet' id='style-css'  href="site-wide/functions/css/diapo.css" type='text/css' media='all' />  
+		
+        <!-- slideshow styles/js/jQuery -->
+		<script type='text/javascript' src='site-wide/functions/js/jquery.min.js'></script>
+		<!--[if !IE]><!--><script type='text/javascript' src='site-wide/functions/js/jquery.mobile-1.0rc2.customized.min.js'></script><!--<![endif]-->
+		<script type='text/javascript' src='site-wide/functions/js/jquery.easing.1.3.js'></script> 
+		<script type='text/javascript' src='site-wide/functions/js/jquery.hoverIntent.minified.js'></script> 
+		<script type='text/javascript' src='site-wide/functions/js/diapo.js'></script> 	
+		<!-- end slideshow styles/js/jQuery -->
+
+		<script>
+			$(function(){
+				$('.pix_diapo').diapo();
+			});
+
+		</script>
+
+		<style>
+			section {
+				display: block;
+				overflow: hidden;
+				position: relative;
+			}
+		</style>
+	</head>
 	
-<title>Bombest Babes</title>
-	
-<link rel="stylesheet" type="text/css" href="css/landing.css" />	
+	<body>
 
-<!-- slideshow styles/js/jQuery -->
-<link rel='stylesheet' id='style-css'  href='css/diapo.css' type='text/css' media='all'> 
-<script type='text/javascript' src='scripts/jquery.min.js'></script>
-<!--[if !IE]><!--><script type='text/javascript' src='scripts/jquery.mobile-1.0rc2.customized.min.js'></script><!--<![endif]-->
-<script type='text/javascript' src='scripts/jquery.easing.1.3.js'></script> 
-<script type='text/javascript' src='scripts/jquery.hoverIntent.minified.js'></script> 
-<script type='text/javascript' src='scripts/diapo.js'></script> 	
-<!-- end slideshow styles/js/jQuery -->
-
-<script>
-$(function(){
-	$('.pix_diapo').diapo();
-});
-
-</script>
-
-<style>
-section {
-	display: block;
-	overflow: hidden;
-	position: relative;
-}
-</style>
-
-</head>
-	
-<body>
-
-<!--homepage slideshow-->
-<div class="wrap">
-	<div style="overflow:hidden; width:100%; margin: 0 auto 0"> 
-		<div class="pix_diapo">
+		<!--homepage slideshow-->
+		<div class="wrap">
+			<div style="overflow:hidden; width:100%; margin: 0 auto 0"> 
+				<div class="pix_diapo">
 			  
-			  <div data-time="8000">
-                     <img src="images/slides/model.jpeg">
-                     <div class="caption elemHover fromRight fadeIn"><!--model name-->
-					 <p class="name">Model Name</p>
-				 </div><!--end model name-->
-				 <div class="babe_m elemHover fadeIn"></div>
-		  	 </div>
+			  		<div data-time="8000">
+                     	<img src="site-wide/images/slides/model.jpeg">
+                     	<div class="caption elemHover fromRight fadeIn"><!--model name-->
+					 		<p class="name">Model Name</p>
+				 		</div><!--end model name-->
+				 		<div class="babe_m elemHover fadeIn"></div>
+		  	 		</div>
 
-                 <div data-time="8000">
-                     <img src="images/slides/model2.jpeg">
-                     <div class="caption elemHover fromRight fadeIn"><!--model name-->
-					 <p class="name">Model Name</p>
-                     </div>><!--end model name-->
-				 <div class="babe_m elemHover fadeIn"></div>
-                 </div>
+                 	<div data-time="8000">
+                     	<img src="site-wide/images/slides/model2.jpeg">
+                     	<div class="caption elemHover fromRight fadeIn"><!--model name-->
+					 		<p class="name">Model Name</p>
+                     	</div>><!--end model name-->
+				 		<div class="babe_m elemHover fadeIn"></div>
+                 	</div>
 				
-                <div data-time="8000">
-                    <img src="images/slides/model3.jpeg">
-                    <div class="caption elemHover fromRight fadeIn"><!--model name-->
-					<p class="name">Model Name</p>
-                    </div>><!--end model name-->
-			 	<div class="babe_m elemHover fadeIn"></div>
-                </div>
-	
-		</div><!-- #pix_diapo -->
-    </div>
+                	<div data-time="8000">
+                    	<img src="site-wide/images/slides/model3.jpeg">
+                    	<div class="caption elemHover fromRight fadeIn"><!--model name-->
+							<p class="name">Model Name</p>
+                    	</div>><!--end model name-->
+			 			<div class="babe_m elemHover fadeIn"></div>
+                	</div>
+				
+                </div><!-- #pix_diapo -->
+    		</div>
     
-    <ul class="nav"><!-- navigation landing-->
-      <li><a href="guy.html">Guys</a></li>
-      <li><a href="#">Gals</a></li>
-      <li><a class="login" href="login.html">Login</a></li>
-    </ul><!--end navigation-->
+		<ul class="nav"><!-- navigation landing-->
+      		<li><a href="guy.html">Guys</a></li>
+      		<li><a href="#">Gals</a></li>
+      		<li><a class="login" href="login.html">Login</a></li>
+    	</ul><!--end navigation-->
     
-</div><!-- end wrap-->
+	</div><!-- end wrap-->
 
 </body>
 <!-- end comment-->
