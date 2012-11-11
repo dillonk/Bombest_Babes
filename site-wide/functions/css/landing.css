@@ -14,7 +14,7 @@ table {border-collapse: collapse;border-spacing: 0;}
 
 /*body styles and settings */
 body {
-	background-image: url('../images/ravenna.png');
+	background-image: url('../../images/ravenna.png');
 	width: 100%;
 	margin: 0 auto;
 	text-align: center;
@@ -22,13 +22,17 @@ body {
 	overflow-y: hidden;
 	overflow:-moz-scrollbars-horizontal;
 }
-
 .nav{
+	background-color: #000;
+	position: absolute;
+	bottom: -10px;
+	border-bottom-color:#333;
 	text-align: left;
 	width: 100%;
-  	list-style:none;
+	list-style: none;
+	z-index: 1001;
+	height: 44px;
 }
-
 .nav li{
   	display:inline;
 }
