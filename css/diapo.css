@@ -1,0 +1,89 @@
+@import "fonts.css"; 
+
+.pix_diapo {
+	margin: 0 auto;
+	background: #000;
+	-moz-box-shadow: 0 3px 10px #000;
+	-webkit-box-shadow: 0 3px 10px #000;
+	box-shadow: 0 3px 10px #000;
+	height: 600px;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+.pix_diapo > div {
+	display: none;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	width: 100%;
+}
+
+#pix_prev, #pix_next {
+	cursor: pointer;
+	display: block;
+	height: 45px;
+	margin-top: -20px;
+	position: absolute;
+	top: 50%;
+	width: 45px;
+	z-index: 1001;
+}
+
+#pix_prev {
+	background: url("../images/prev.png") no-repeat;
+	left: 10%;
+}
+
+#pix_next {
+	background: url('../images/next.png') no-repeat;
+	left: auto!important;
+	right: 10%!important;
+}
+
+.pix_relativize {
+	overflow: hidden;
+	position: relative;
+}
+.imgFake {
+	cursor: pointer;
+}
+.elemHover {
+	position: absolute;
+}
+.caption {
+	background: rgba(255,105,180, 0.4);
+	top: 50px;
+	color: #fff;
+	display: block;
+	width: "";
+	height: 70px;
+	right: 10%;
+}
+.ui-loader {
+	display: none;
+}
+
+.name {font-family: light; color: #fff; font-size:50px; margin: 10px 30px 0px 30px;}
+
+.babe_m {
+	background: url('../images/BB_month.png') no-repeat;
+	display: block;
+	position: absolute;
+	top: 250px;
+	left: 13%;
+	width: 325px;
+	height: 325px;
+	z-index: 100000;
+}
+
+
+
+
+
+
+
+
+
+
