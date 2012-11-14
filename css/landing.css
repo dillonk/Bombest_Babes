@@ -19,7 +19,6 @@ body {
 	margin: 0 auto;
 	text-align: center;
 	background-color: #fff;
-	overflow-y: hidden;
 	overflow:-moz-scrollbars-horizontal;
 	margin-bottom: 100px;
 }
