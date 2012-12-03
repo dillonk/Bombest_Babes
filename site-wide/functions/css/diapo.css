@@ -1,13 +1,12 @@
 @import "fonts.css"; 
 
 .pix_diapo {
-	margin-left:auto;
-	margin-right:auto;
+	margin: 0 auto;
 	background: #000;
 	-moz-box-shadow: 0 3px 10px #000;
 	-webkit-box-shadow: 0 3px 10px #000;
 	box-shadow: 0 3px 10px #000;
-	height: 900px;
+	height: 550px;
 	overflow: hidden;
 	position: relative;
 	width: 100%;
@@ -72,7 +71,7 @@
 	background: url('../../images/BB_month.png') no-repeat;
 	display: block;
 	position: absolute;
-	top: 250px;
+	top: 220px;
 	left: 13%;
 	width: 325px;
 	height: 325px;

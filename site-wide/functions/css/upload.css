@@ -1,101 +1,48 @@
 @import "fonts.css"; 
 
-#wrap {
-	width: 960px;
+body {text-align: center; background: url('../images/noise_pattern_with_crosslines.png'); }
+
+#box {
 	margin: 0 auto 0;
-	text-align: left;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	width: 500px;
+	height: '';
+	margin-top: 20px;
+	background: #fff;
+	box-shadow: 0 1px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4);
+}
+
+#wrap {
+	margin: 0 auto;
 }
 
 h1 {
-	padding-top: 20px;
-	text-align: center;
 	font-family: "light";
-	font-size: 80px;
-	color: #ff69b4;
+	font-size: 20px;
+	padding-top: 5px;
+	color: #999;
 }
 
 h2 {
-	text-align: left;
 	font-family: "light";
-	font-size: 50px;
-	margin-top: 20px;
-	width: 700px;
-	color: #777;
+	font-size: 15px;
+	padding-top: -15px;
+	color: #999;
 }
 
-h3 {
-  	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-	font-size: 70px;
-	color: #27a9e1;
-	margin-top: 20px;
+#logo {
+	background: url('../images/BB_logo.png')  no-repeat;
+	width:270px;
+	height:270px;
+	margin: 0 auto;
+	top: 30px;
 }
 
-
-
-h4 {
-  	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-	font-size: 50px;
-	color: #333;
-	text-align: center;
-}
-
-ol{
-	counter-reset: li; /* Initiate a counter */
-	*list-style: decimal; /* Keep using default numbering for IE6/7 */
-	font: 30px 'trebuchet MS', 'lucida sans';
-	padding-top: -20px;
-	margin-top: -20px;
-	margin-bottom: 2em;
-	text-shadow: 0 1px 0 rgba(255,255,255,.5);
-}
-
-.circle-list li{
-    padding: 1em;
-    border-bottom: 1px dashed #ccc;
-}
-
-.circle-list h3{
-    position: relative;
-    margin: 0;
-}
-
-.circle-list p{
-    margin: 0;
-	color: #333;
-}
-
-.circle-list h3:before{
-    content: counter(li);
-    counter-increment: li;
-    position: absolute;    
-    z-index: -1;
-    left: -1.3em;
-    top: -.8em;
-    background: #333;
-    height: 1.5em;
-    width: 1.5em;
-    border: .1em solid rgba(0,0,0,.05);
-    text-align: center;
-    font: italic bold 1em/1.5em Georgia, Serif;
-    color: #ccc;
-    border-radius: 1.5em;
-    transition: all .2s ease-out;    
-}
-
-.circle-list li:hover h3:before{
-    background-color: #333;
-    border-color: rgba(0,0,0,.08);
-    border-width: .2em;
-    color: #333;
-    transform: scale(1.5);
-}
-
-/***** Signup Form *****/
 .container {
     width: 406px;
     max-width: 406px;
     margin: 0 auto;
-	margin-top: -50px;
 }
 
 #signup {
@@ -155,6 +102,13 @@ input:-moz-placeholder {
     margin-bottom: 20px;
     box-shadow: inset 0px 2px 3px rgba( 0,0,0,0.1 );
     clear: both;
+}
+
+#signup .inputs input[type=file] {
+	width: 100px;
+	height: 100px;
+	background: #999;
+	cursor: pointer;
 }
 
 #signup .inputs input[type=email]:focus, input[type=password]:focus {
@@ -229,4 +183,3 @@ input:-moz-placeholder {
         from(#add8e6),
         to(#add8e6));
 }
-/* end signup form */

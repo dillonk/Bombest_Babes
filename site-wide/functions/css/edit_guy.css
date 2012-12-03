@@ -1,105 +1,67 @@
 @import "fonts.css"; 
 
-#wrap {
-	width: 960px;
-	margin: 0 auto 0;
+body {text-align: center; background: url('../images/noise_pattern_with_crosslines.png'); padding-bottom: 50px;}
+
+#box {
 	text-align: left;
+	margin: 0 auto 0;
+	padding-bottom: 50px;
+	width: 960px;
+	height: '';
+	margin-top: 20px;
+	background: #fff;
+	box-shadow: 0 1px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4);
+}
+
+#form_wrap {
+	width: 330px;
+	height: "";
+	margin-left: 50px;
+	margin-top: -40px;
+	position: relative;
+}
+
+hr {
+	width: 400px;
+	height: 2px;
+	background: #999;
+	border: none;
+	margin-left: 0px;
+	margin-top: 10px;
+}
+
+#wrap {
+	margin: 0 auto 0;
 }
 
 h1 {
-	padding-top: 20px;
-	text-align: center;
 	font-family: "light";
-	font-size: 80px;
-	color: #ff69b4;
-}
-
-h2 {
-	text-align: left;
-	font-family: "light";
-	font-size: 50px;
-	margin-top: 20px;
-	width: 700px;
-	color: #777;
-}
-
-h3 {
-  	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-size: 70px;
-	color: #27a9e1;
-	margin-top: 20px;
+	color: #999;
+	margin-left: 50px;
+	padding-top: 20px;
 }
 
-
-
-h4 {
-  	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-	font-size: 50px;
-	color: #333;
-	text-align: center;
+h2 a {
+	color: #add8e6;
+	text-decoration: none;
 }
 
-ol{
-	counter-reset: li; /* Initiate a counter */
-	*list-style: decimal; /* Keep using default numbering for IE6/7 */
-	font: 30px 'trebuchet MS', 'lucida sans';
-	padding-top: -20px;
-	margin-top: -20px;
-	margin-bottom: 2em;
-	text-shadow: 0 1px 0 rgba(255,255,255,.5);
+#logo {
+	background: url('../images/BB_logo.png')  no-repeat;
+	width:270px;
+	height:270px;
+	margin: 0 auto;
+	top: 30px;
 }
 
-.circle-list li{
-    padding: 1em;
-    border-bottom: 1px dashed #ccc;
-}
-
-.circle-list h3{
-    position: relative;
-    margin: 0;
-}
-
-.circle-list p{
-    margin: 0;
-	color: #333;
-}
-
-.circle-list h3:before{
-    content: counter(li);
-    counter-increment: li;
-    position: absolute;    
-    z-index: -1;
-    left: -1.3em;
-    top: -.8em;
-    background: #333;
-    height: 1.5em;
-    width: 1.5em;
-    border: .1em solid rgba(0,0,0,.05);
-    text-align: center;
-    font: italic bold 1em/1.5em Georgia, Serif;
-    color: #ccc;
-    border-radius: 1.5em;
-    transition: all .2s ease-out;    
-}
-
-.circle-list li:hover h3:before{
-    background-color: #333;
-    border-color: rgba(0,0,0,.08);
-    border-width: .2em;
-    color: #333;
-    transform: scale(1.5);
-}
-
-/***** Signup Form *****/
 .container {
     width: 406px;
     max-width: 406px;
     margin: 0 auto;
-	margin-top: -50px;
 }
 
 #signup {
-    padding: 0px 25px 25px;
     background: #fff;
     display: table;
     position: static;
@@ -163,20 +125,6 @@ input:-moz-placeholder {
     outline: none;   
 }
 
-#signup .inputs .checkboxy {
-    display: block;
-    position: static;
-    height: 25px;
-    margin-top: 10px;
-    clear: both;
-}
-
-#signup .inputs input[type=checkbox] {
-    float: left;
-    margin-right: 10px;
-    margin-top: 3px;
-}
-
 #signup .inputs label.terms {
     float: left;
     font-size: 14px;
@@ -184,7 +132,7 @@ input:-moz-placeholder {
 }
 
 #signup .inputs #submit {
-    width: 100%;
+    width: 350px;
     margin-top: 10px;
     padding: 15px 0;
     color: #fff;
@@ -229,4 +177,65 @@ input:-moz-placeholder {
         from(#add8e6),
         to(#add8e6));
 }
-/* end signup form */
+
+/****** FOOTER ******/
+
+#footer {
+	width: 960px;
+	position: relative;
+	margin: 0 auto;
+}
+
+#footer hr {
+	width: 960px;
+	margin-top: 50px;
+	height: 2px;
+	background: #000;
+	border: none;
+}
+
+#copyright {
+  	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-size: 12px;
+	color: #000;
+	text-align: left;
+	margin-left: 0;
+	position: absolute;
+}
+
+#social {width: 100px; margin-left: 835px;}
+
+#fb {
+	background: url('../images/picons46.png') no-repeat;
+	width: 16px;
+	height: 16px;
+	display: inline;
+	position: absolute;
+}
+
+#fb:hover {color: #333; cursor: pointer;}
+
+#tt {
+	background: url('../images/picons43.png') no-repeat;
+	width: 16px;
+	height: 16px;
+	display: inline;
+	position: absolute;
+	margin-left: 30px;
+}
+
+#tt:hover {color: #333; cursor: pointer;}
+
+
+#ig {
+	background: url('../images/picons78.png') no-repeat;
+	width: 16px;
+	height: 16px;
+	display: inline;
+	position: absolute;
+	margin-left: 60px;
+}
+
+#ig:hover {color: #333; cursor: pointer;}
+
+/****** END FOOTER ******/
