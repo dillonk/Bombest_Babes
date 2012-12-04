@@ -20,15 +20,13 @@
 
 <div class="container">
 
-    <form id="signup">
+    <form id="signup" method="post" action="site-wide/functions/php/ajax_login.php">
 
         <div class="inputs">
         
             <input type="email" placeholder="e-mail" autofocus />
-        
             <input type="password" placeholder="Password" />
-            
-            <a id="submit" href="#">Login</a>
+            <input type="submit" id="submit" value="Login"/>
         
         </div>
 

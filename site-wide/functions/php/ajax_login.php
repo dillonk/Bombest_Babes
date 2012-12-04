@@ -18,7 +18,8 @@ function clean($str) {
 	
 //Validation error flag
 	$errflag = false;
-
+if(isset($_POST['email']) && isset($_POST['password2'])){
+	
 //transfer values sent from form
 $email = clean($_POST['email']);
 $passwrd = md5(clean($_POST["password2"]));
@@ -50,7 +51,7 @@ $count = mysql_num_rows($result);
 if ($count == 1) {	
 	$_SESSION['u_name'] = $email;
 	$_SESSION['usrpasswrd'] = $passwrd;
-	header("Location: ../../../index.php");
+	header("Location: ../../../imageFeed.php");
 	exit();
 }
 else {?>
