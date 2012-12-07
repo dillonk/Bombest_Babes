@@ -11,9 +11,18 @@ session_start();
 	
 	$DOB = $month . '-' . $day . '-' . $year;
 	$userFolder = time() . $UsrF_name . $UsrL_name;
-	 
 	
-	//$Usr_gender = $_POST['usrgender'];
+		$Usr_gender1 = $_POST['male'];
+	$Usr_gender2 = $_POST['female']; 
+	
+	if(isset($Usr_gender1) && $Usr_gender1 != ''){
+		$Usr_gender = $Usr_gender1;
+	} else if( isset($Usr_gender2) && $Usr_gender2 != ''){
+		$Usr_gender = $Usr_gender2;
+	}
+	
+
+	
 	$Usr_country = $_POST['slist'];
 	$Usr_passwrd = $_POST["password"];
 	$Usr_passwrd2 = $_POST["password2"];
@@ -34,7 +43,7 @@ if(mysql_num_rows($result) > 0)
 }
 
 else {
-	
+	$Usr_passwrd = md5($Usr_passwrd2);
 	$thisdir = getcwd();
 	if(mkdir($thisdir ."..\\..\\users\\".$userFolder, 0777, true)){
 		echo "Directory has been created successfully...";
@@ -56,7 +65,7 @@ else {
 		'".$Usr_email."',
 		'".$Usr_passwrd."',
 		'".$DOB."',
-		NULL,
+		'".$Usr_gender."',
 	 	NULL,
 	 	'".$Usr_country."'
 	 )";
@@ -75,7 +84,10 @@ else {
 // ----------------------------------end send email--------------------------------------------------
 
 		//now set the session from here if needed
-	$_SESSION['u_name']= $UsrF_name;
+		echo "user profile created";
+		
+		$_SESSION['email'] = $email;
+		$_SESSION['passwrd2'] = $passwrd2;
 	header("Location: ajax_login.php");
 
 }
