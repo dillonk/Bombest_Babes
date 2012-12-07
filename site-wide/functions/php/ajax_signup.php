@@ -46,6 +46,7 @@ else {
 	$Usr_passwrd = md5($Usr_passwrd2);
 	$thisdir = getcwd();
 	if(mkdir($thisdir ."..\\..\\users\\".$userFolder, 0777, true)){
+		mkdir($thisdir ."..\\..\\users\\".$userFolder."\\images\\", 0777, true);
 		echo "Directory has been created successfully...";
 	
 	$query="INSERT INTO `bombest-babes`.`users`(
